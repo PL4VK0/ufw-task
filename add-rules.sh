@@ -12,6 +12,6 @@ ufw allow in from 192.168.32.55 to 172.168.0.100 port 3005
 ufw allow in on eth0 to 172.168.0.100 port 8099
 
 #4
-ufw limit in proto tcp from to 172.168.0.100 port 6050:6055
+ufw limit in proto tcp to 172.168.0.100 port 6050:6055
 
 ufw status >$1
